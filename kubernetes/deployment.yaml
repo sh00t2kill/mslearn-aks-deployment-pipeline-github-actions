@@ -12,7 +12,7 @@ spec:
         app: contoso-website
     spec:
       containers:
-        - image: !IMAGE!
+        - image: {{.Values.containerImage}}
           name: contoso-website
           resources:
             requests:
